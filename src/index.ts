@@ -23,6 +23,7 @@ app.get("/hello", (a, b)=> {
     b.send("여기는 hello주소로 들어왔습니다.");
 });
 
+
 app.get("/posts", (req, res) => {
     //res.json : 스트링이 아닌 객체타입의 데이터를 보낼 때 사용(단, 함수 제외)
     // res.json 메소드를 사용하려면 app.use(Express.json()) 을 꼭 써줘야함
