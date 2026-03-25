@@ -1,6 +1,6 @@
 # lecture-nodejs-01-express
 
-## Express 를 초기 세텡합니다.
+## Express 를 초기 세팅합니다.
 
 ```
 import express form "express";
