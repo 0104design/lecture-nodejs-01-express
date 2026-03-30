@@ -12,14 +12,14 @@ router.get("/users/login",(req, res) => {
     // const email = req.query.email;
     // const password = req.query.password;
     const {email, password} = req.query;
-    res.send (`email${email}, password${password}`);
+
     // 1. email, password 둘 다 도착 됐는지 확인 -> 성공/ 실패
     // 2. email로 갑을 찾알을 때 맞는지              성공 / 실패
     // 3. 그 잦은 회원 정보와 비밀번호를 비교해서 맞는지 겅공 / 실패
-    const successPage = path.join(process.cwd(), "public", "success,html")
+    const successPage = path.join(process.cwd(), "public", "success.html")
     const failPage = path.join(process.cwd(), "public", "fail.html")
 
-    if(!email || !password){
+    if(!email || !password) {
         return res.sendFile(failPage);
     }
     const user = mockUsers.find((value) => {

@@ -27,7 +27,7 @@ app.get("/hello", (a, b)=> {
 });
 
 app.use(postRouter);
-app.use(userRouter)
+app.use(userRouter);
 
 app.get("/", (req, res)=> {
     res.send("<h1>Express서버</h1><div>이렇게 쓰는 건 너무 힘드네요</div>");
